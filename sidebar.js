@@ -10,7 +10,9 @@ function addSideBarLi() {
   li.appendChild(a);
   ul.appendChild(li);
 }
-
+var currentScript = $('script').last();
 $(document).ready(() => {
         addSideBarLi();
+        addSideBarLi();
+  console.log(currentScript);
 });
