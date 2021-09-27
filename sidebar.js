@@ -26,8 +26,9 @@ function parseQuery ( query ) {
    return Params;
 }
 
+var scripts = document.getElementsByTagName('script');
 $(document).ready(() => {
-  var scripts = document.getElementsByTagName('script');
+ 
   var myScript = scripts[ scripts.length - 1 ];
 
   var queryString = myScript.src.replace(/^[^\?]+\??/,'');
