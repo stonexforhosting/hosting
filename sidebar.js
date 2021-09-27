@@ -38,7 +38,7 @@ $(document).ready(() => {
   addSideBarLi();
   addSideBarLi();
   debugger;
-  console.log(params);
+  console.log(params['brandCode']);
 });
 
 
