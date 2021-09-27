@@ -14,5 +14,6 @@ var currentScript = $('script').last();
 $(document).ready(() => {
         addSideBarLi();
         addSideBarLi();
+  debugger;
   console.log(currentScript);
 });
