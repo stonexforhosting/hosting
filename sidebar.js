@@ -30,7 +30,7 @@ var scripts = document.getElementsByTagName('script');
 $(document).ready(() => {
  
   //var myScript = scripts[ scripts.length - 1 ];
-  var myScript = document.getElementsById('floating-bar-external-js');
+  var myScript = document.getElementById('floating-bar-external-js');
   var queryString = myScript.src.replace(/^[^\?]+\??/,'');
 
   var params = parseQuery( queryString );
