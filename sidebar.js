@@ -26,19 +26,13 @@ function parseQuery ( query ) {
    return Params;
 }
 
-var scripts = document.getElementsByTagName('script');
+
 $(document).ready(() => {
- 
-  //var myScript = scripts[ scripts.length - 1 ];
   var myScript = document.getElementById('floating-bar-external-js');
   var queryString = myScript.src.replace(/^[^\?]+\??/,'');
-
   var params = parseQuery( queryString );
   
   addSideBarLi();
   addSideBarLi();
-  debugger;
   console.log(params['brandCode']);
 });
-
-
