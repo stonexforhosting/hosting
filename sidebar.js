@@ -26,7 +26,6 @@ function parseQuery ( query ) {
    return Params;
 }
 
-
 $(document).ready(() => {
   var myScript = document.getElementById('floating-bar-external-js');
   var queryString = myScript.src.replace(/^[^\?]+\??/,'');
